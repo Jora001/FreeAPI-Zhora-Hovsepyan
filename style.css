@@ -1,0 +1,106 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #f6f8fc, #e0ecff);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-view,
+.details-view,
+.favorites-view {
+    flex: 1 1 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-view:hover,
+.details-view:hover,
+.favorites-view:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #0d47a1;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 6px;
+    background: #f3f6ff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    background: #e3eaff;
+    color: #1a237e;
+    transform: scale(1.02);
+}
+
+#pokemon-details {
+    text-align: center;
+}
+
+#pokemon-details img {
+    width: 120px;
+    height: 120px;
+    margin: 10px 0;
+    image-rendering: crisp-edges;
+}
+
+#pokemon-details button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pokemon-details button:hover {
+    background-color: #0d47a1;
+}
+
+.favorites-view li {
+    background-color: #fff8e1;
+    border: 1px solid #ffe082;
+}
+
+.favorites-view li:hover {
+    background-color: #ffecb3;
+}
